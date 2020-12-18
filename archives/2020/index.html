@@ -271,12 +271,22 @@
     <!-- Analytics -->
     
         <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'G-2QN8WHJYXG', 'auto');ga('send', 'pageview');
+    (function (window, document, s, l, i) {
+        window[l] = window[l] || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', i);
+
+        var f = document.getElementsByTagName(s)[0],
+            j = document.createElement(s);
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtag/js?id=' + i;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'G-2QN8WHJYXG');
+
+
 </script>
+
     
     
         <script>
@@ -337,13 +347,71 @@
     
 
         <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2020/12/18/Anconda+Tensorflow+2.3.0+GPU+Pytorch/">Anconda 安装 Tensorflow 2.3.0 GPU + Pytorch</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            在本文中，您将看到如何在Anconda下如何进行Tensorflow GPU版本的安装配置。
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2020/12/18/Anconda+Tensorflow+2.3.0+GPU+Pytorch/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Elva's avatar">
+            </div>
+            <div>
+                <strong>Elva</strong>
+                <span>12月 18, 2020</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
         <p class="article-headline-p"><a href="/2020/12/16/Github%20Pages%20+%20Hexo/">使用Github Pages + Hexo创建自己的博客小站</a></p>
     </div>
 
     <!-- Post Excerpt -->
     <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
         
-            
+            本文将展示如何把 Hexo 博客部署到 GitHub Pages 上
+
         
         &nbsp;&nbsp;&nbsp;
         <span>
@@ -536,7 +604,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2020/12/">十二月 2020<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2020/12/">十二月 2020<span class="sidebar_archives-count">3</span></a>
             </ul>
         </li>
         
